@@ -1,0 +1,16 @@
+{
+  "name": "qrcode-generator",
+  "version": "1.0.0",
+  "description": "Gerador de QRCodes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno Fernandes Horn",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "qrcode": "^1.5.3",
+    "socket.io": "^4.7.5"
+  }
+}
