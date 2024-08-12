@@ -1,0 +1,57 @@
+@keyframes animar {
+    0% {
+        background-color: teal;
+
+    }
+
+    100% {
+        background-color: purple;
+    }
+}
+
+@keyframes moveAround {
+    from {
+      transform: translateX(-100px);
+    }
+    to {
+      transform: translateX(100px);
+    }
+}
+
+@keyframes golden {
+    from {
+        border-color: transparent;
+    }
+
+    to {
+        border-color: gold;
+    }
+    
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#target {
+    box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    font-size: 24px;
+    animation: animar 4s linear 0s infinite alternate, 
+    moveAround 2s ease-in-out 0s infinite alternate;
+    transition: color 1s ease-in-out;    
+}
+
+#target:active {
+    color: gold;
+    animation: animar 4s linear 0s infinite alternate, 
+    moveAround 2s ease-in-out 0s infinite alternate, 
+    golden 1s linear 1s 1 normal forwards;
+    transition: color 1s ease-in;
+}
